@@ -36,3 +36,16 @@ str="Hello python and Django"
 lis1=str.split()
 for i in lis1:
     print(i[::-1],end=" ")
+------------------------------------------
+String Anagram ex. listen == silent
+
+
+def anagram(s1,s2):
+    if sorted(s1)==sorted(s2):
+        print("anagram")
+    else:
+        print("Not a anagram")
+
+s1=input("Enter string: ")
+s2=input("Enter string: ")
+anagram(s1,s2)
