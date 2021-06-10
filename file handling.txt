@@ -1,0 +1,59 @@
+
+The open() function takes two parameters; filename, and mode.
+      
+           syntax: file_object=open('filename','mode')
+
+
+There are four different methods (modes) for opening a file:
+
+"r" - Read - Default value. Opens a file for reading, error if the file does not exist
+
+
+f = open("demofile.txt")   is same as  f = open("demofile.txt", "rt")
+
+
+
+Read:
+   f=open('filename','r')
+      
+syntax==>       f.read()   ==>By default the read() method returns the whole text, but you can also specify how many characters you want to return
+
+for eg.         f.read(5) ==>Return the 5 first characters of the file
+
+
+Readline: You can return one line by using the readline() method:
+
+    f = open("demofile.txt", "r")
+
+    print(f.readline())
+
+
+By calling readline() two times, you can read the two first lines:
+
+Read two lines of the file:
+
+       f = open("demofile.txt", "r")
+
+         print(f.readline())
+         print(f.readline())
+
+tell():
+  this method is used to find current position of file pointer from beginning of the file. position start from 0.
+
+  Syntax:   file_object.tell()
+
+            takes no parameter
+
+seek():
+       This method is used to move file pointer from one position to another position from beginning of the file. Position start from 0 and it must be positive integer.
+   Syntax:    file.object.seek(position)
+
+
+With statement:
+
+       The with statement can be used while opening a file.
+       when we open a file using with statement there is no need to close the file explicitly.
+       with statement in python is used in file exception handling to make the code cleaner and much more readable.
+
+       Syntax:
+              with open('filename','r')as file_object:

@@ -1,0 +1,33 @@
+Class variable/Static variable
+
+  Class variables are the variables whose single copy is avilable to all the instance of the class.
+
+  Shares with every object.
+
+#Various places to declare static variables:
+------------------------------------------------------------------------------------------------
+1)Within the class directly but from outside of any method
+
+2)Inside constructor by using classname
+
+3)Inside instance method by using class name
+
+4)Inside class method either by using classname or cls variable
+
+5)Inside static method by using classname
+
+6)Outside of class by using classname
+
+
+#How to access class/static variable
+-------------------------------------------------------------------------------------------------
+1) Anywhere we can access static variables bye using classname,self variable,cls variable,object reference
+
+
+#How to delete static variable
+
+you can delete anywhere
+
+ del classname.variablename
+
+del cls.variablename ===>inside classmethod
